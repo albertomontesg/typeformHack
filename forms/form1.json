@@ -1,0 +1,14 @@
+{
+  "title": "Teleform example",
+  "design_id": 11,
+  "fields": [
+    {
+      "type": "statement",
+      "question": "Hello Costumer! This is a satisfaction survey by TeleForm. We will guide you through a series of questions to help you diagnose and resolve your issue :)"
+    },
+    {
+      "type": "yes_no",
+      "question": "Have you already received your package?"
+    }
+  ]
+}

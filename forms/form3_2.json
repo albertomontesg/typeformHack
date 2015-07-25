@@ -1,0 +1,18 @@
+{
+  "title": "TeleForm example",
+  "design_id": 11,
+  "fields": [
+    {
+       "type": "statement",
+       "question": "Sorry to bother you...😞"
+    },
+    {
+      "type": "email",
+      "question": "Could you give us your mail to give you notifications?"
+    },
+    {
+      "type": "statement",
+      "question": "Thank you very much! We love you! ❤️"
+    }
+  ]
+}

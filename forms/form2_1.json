@@ -1,0 +1,29 @@
+{
+  "title": "TeleForm example",
+  "design_id": 11,
+  "fields": [
+    {
+       "type": "multiple_choice",
+       "question": "How long did it take for you to receive the package?",
+       "choices": [
+         {
+           "label": "Less than 3 days"
+         },
+         {
+           "label": "3 to 5 days"
+         },
+         {
+           "label": "More than 5 days"
+         }
+       ]
+    },
+    {
+      "type": "rating",
+      "question": "Please, rate in a scale of 1 (worst) to 5 (best) the delivery service"
+    },
+    {
+      "type": "opinion_scale",
+      "question": "Do you consider that the delivered product is satisfactory? Please, rate your satisfaction level"
+    }
+  ]
+}
