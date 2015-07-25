@@ -19,11 +19,11 @@
     },
     {
       "type": "rating",
-      "question": "Please, rate in a scale of 1 (worst) to 5 (best) the delivery service"
+      "question": "Please, rate the delivery service."
     },
     {
       "type": "opinion_scale",
-      "question": "Do you consider that the delivered product is satisfactory? Please, rate your satisfaction level"
+      "question": "Do you consider that the delivered product is satisfactory? Please, rate your satisfaction level."
     }
   ]
 }

@@ -4,7 +4,7 @@
   "fields": [
     {
        "type": "statement",
-       "question": "We are sad our product did not convince you...😞"
+       "question": "We are sad our product did not meet your expectations... 😞"
     },
     {
       "type": "long_text",
@@ -16,7 +16,7 @@
       "labels": true,
       "choices": [
         {
-          "label": "Chewacca",
+          "label": "Chewbacca",
           "image_id": 2675
         },
         {
@@ -35,7 +35,7 @@
     },
     {
       "type": "statement",
-      "question": "Thank your comprehension! We love you! ❤️"
+      "question": "Thank you for your comprehension! We love you! ❤️"
     }
   ]
 }

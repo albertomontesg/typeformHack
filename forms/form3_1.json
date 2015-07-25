@@ -4,30 +4,30 @@
   "fields": [
     {
        "type": "multiple_choice",
-       "question": "Which where the features you liked it most?",
+       "question": "Which were the features you liked the most?",
        "choices": [
           {
-            "label": "User functionality"
+            "label": "User functionalities"
           },
           {
-            "label": "It's big titis"
+            "label": "Quality"
           },
           {
             "label": "Being able to kick asses"
           },
           {
-            "label": "Feeling like a god"
+            "label": "Feeling like a sir"
           }
         ]
     },
     {
       "type": "yes_no",
-      "question": "Will you buy it again?"
+      "question": "Would you buy it again?"
     },
     
     {
       "type": "email",
-      "question": "Could you give us your mail to give you notifications?"
+      "question": "Could you give us your mail to give you future notifications?"
     },
     {
       "type": "picture_choice",
@@ -35,7 +35,7 @@
       "labels": true,
       "choices": [
         {
-          "label": "Chewacca",
+          "label": "Chewbacca",
           "image_id": 2675
         },
         {

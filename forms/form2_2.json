@@ -4,15 +4,15 @@
   "fields": [
     {
        "type": "statement",
-       "question": "Sorry to bother you...😞"
+       "question": "Sorry to bother you... 😞"
     },
     {
       "type": "email",
-      "question": "Could you give us your mail to give you notifications?"
+      "question": "Could you give us your mail to notifiy you about new updates?"
     },
     {
       "type": "statement",
-      "question": "Thank you very much! We love you! ❤️"
+      "question": "We hope you receive your package soon. Thank you very much! We love you! ❤️"
     }
   ]
 }
