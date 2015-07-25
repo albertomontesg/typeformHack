@@ -3,9 +3,28 @@
   "design_id": 11,
   "fields": [
     {
-       "type": "statement",
-       "question": "Sorry to bother you...😞"
+       "type": "multiple_choice",
+       "question": "Which where the features you liked it most?",
+       "choices": [
+          {
+            "label": "User functionality"
+          },
+          {
+            "label": "It's big titis"
+          },
+          {
+            "label": "Being able to kick asses"
+          },
+          {
+            "label": "Feeling like a god"
+          }
+        ]
     },
+    {
+      "type": "yes_no",
+      "question": "Will you buy it again?"
+    },
+    
     {
       "type": "email",
       "question": "Could you give us your mail to give you notifications?"

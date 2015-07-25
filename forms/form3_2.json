@@ -3,16 +3,16 @@
   "design_id": 11,
   "fields": [
     {
-       "type": "statement",
-       "question": "Sorry to bother you...😞"
+       "type": "stament",
+       "question": "We are sad our product didn't convince you...😞"
     },
     {
-      "type": "email",
-      "question": "Could you give us your mail to give you notifications?"
+      "type": "long_text",
+      "question": "What could we do better?"
     },
     {
       "type": "statement",
-      "question": "Thank you very much! We love you! ❤️"
+      "question": "Thank your comprehension! We love you! ❤️"
     }
   ]
 }

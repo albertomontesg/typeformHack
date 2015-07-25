@@ -3,7 +3,7 @@ var TelegramBot = require('node-telegram-bot-api');
 var request = require('request');
 var _ = require('underscore');
 
-var telegram_token = '115389597:AAE279QG_TZGnIBk-wPXpcP1ouPZv_n6kDM';
+var telegram_token = '117176772:AAHQLPm0Z6zl0RA5DJ-OkUQdh4J-e2AK4Js';
 var typeform_api_key = '0713948dae86d178178f7c495c96c2fe';
 
 var users = [];
@@ -39,7 +39,7 @@ bot.on('message', function (msg) {
 		console.log(user.form[0]);
 		sendQuestion(user);
 
-	} else {
+	} else if (!findUser(msg.chat.id).isFinished){
 	
 		user = findUser(msg.chat.id);
 		console.log(user);
@@ -59,22 +59,21 @@ bot.on('message', function (msg) {
 				else if(user.indexOfForm == 0)
 					user.form.push(forms[2]);
 				else if (user.indexOfForm == 1 &&
-					user.form[user.indexOfForm].fields[user.indexOfQuestion-1].answer >5 '')
+					user.form[user.indexOfForm].fields[user.indexOfQuestion-1].answer > 5 )
 					user.form.push(forms[3]);
-				else if (user.indexOfForm == 2)
+				else if (user.indexOfForm == 1)
+					console.log(forms[4]);
 					user.form.push(forms[4]);
 				else {
 					user.isFinished = true;
-					break;
 				}
 
 				user.indexOfForm++;
 				user.indexOfQuestion = 0;
 			}
-			if (!user.isFinished) {
-				console.log(user);
-				sendQuestion(user);
-			}
+			console.log(user);
+			sendQuestion(user);
+			
 			
 		} 
 	}
