@@ -3,7 +3,7 @@ var TelegramBot = require('node-telegram-bot-api');
 var request = require('request');
 var _ = require('underscore');
 
-var telegram_token = '117176772:AAHQLPm0Z6zl0RA5DJ-OkUQdh4J-e2AK4Js';
+var telegram_token = '120444592:AAG1AUlugiXOc3o0qGwV1eBCjlX3b2PonfM';
 var typeform_api_key = '0713948dae86d178178f7c495c96c2fe';
 
 var users = [];
@@ -28,7 +28,7 @@ create_form(require('./forms/form3_2.json'), function(response) {
 })
 
 
-var bot = new TelegramBot(telegram_token, {"polling":{"timeout": 1}});
+var bot = new TelegramBot(telegram_token, {"polling":{"timeout": 4}});
 // var form = require('./forms/test_form3.json');
 // console.log(form);
 
