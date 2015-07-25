@@ -1,0 +1,53 @@
+{
+  "title": "Teleform example",
+  "design_id": 11,
+  "fields": [
+    {
+      "type": "statement",
+      "question": "Welcome to Teleform customer care! We will guide you through a series of questions to help you diagnose and resolve your issue :)"
+    },
+    {
+      "type": "rating",
+      "question": "How would you rate the reliability of the product, in a scale ?",
+      "shape": "star"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Please, select the date range when you purchased the product",
+      "choices": [
+        {
+          "label": "More than 6 months ago"
+        },
+        {
+          "label": "1 to 6 months ago"
+        },
+        {
+          "label": "Less than 1 month ago"
+        }
+      ]
+    },
+    {
+      "type": "long_text",
+      "question": "Please, describe the problem you are having"
+    },
+    {
+      "type": "picture_choice",
+      "question": "Please, select the product that you are having trouble with:",
+      "labels": true,
+      "choices": [
+        {
+          "label": "Product A",
+          "image_id": 28
+        },
+        {
+          "label": "Product B",
+          "image_id": 29
+        },
+        {
+          "label": "Product C",
+          "image_id": 30
+        }
+      ]
+    } 
+  ]
+}

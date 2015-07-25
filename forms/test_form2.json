@@ -1,0 +1,34 @@
+{
+  "title": "A couple of quick questions",
+  "design_id": 13,
+  "fields": [
+    {
+      "type": "statement",
+      "question": "Hi Joe, we need to check with you to know if the following info about you is still correct."
+    },
+    {
+      "type": "yes_no",
+      "question": "Are you still married to Susan Boils?"
+    },
+    {
+      "type": "yes_no",
+      "question": "Do you still have 3 children?"
+    },
+    {
+      "type": "yes_no",
+      "question": "Are you still living in the state of Oregon?"
+    },
+    {
+      "type": "yes_no",
+      "question": "Do you still own the house located at: 3 footnote drive?"
+    },
+    {
+      "type": "yes_no",
+      "question": "Do you still own 140 shares in \"Oregon State Railways\""
+    },
+    {
+      "type": "short_text",
+      "question": "Please tell us about anything else that could have an impact on your tax status for the last tax year?"
+    }
+  ]
+}
