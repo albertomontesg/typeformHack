@@ -30,6 +30,29 @@
       "question": "Could you give us your mail to give you notifications?"
     },
     {
+      "type": "picture_choice",
+      "question": "Who would you like to be attended by the next time?",
+      "labels": true,
+      "choices": [
+        {
+          "label": "Chewacca",
+          "image_id": 2675
+        },
+        {
+          "label": "Apple Genius",
+          "image_id": 2676
+        },
+        {
+          "label": "Lina",
+          "image_id": 2673
+        },
+        {
+          "label": "Freak",
+          "image_id": 2674
+        }
+      ]
+    },
+    {
       "type": "statement",
       "question": "Thank you very much! We love you! ❤️"
     }

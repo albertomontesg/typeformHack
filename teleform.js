@@ -8,6 +8,8 @@ var typeform_api_key = '0713948dae86d178178f7c495c96c2fe';
 
 var users = [];
 
+
+
 var forms = new Array(5);
 create_form(require('./forms/form1.json'), function(response) {
 	forms[0] = response;
@@ -61,9 +63,10 @@ bot.on('message', function (msg) {
 				else if (user.indexOfForm == 1 &&
 					user.form[user.indexOfForm].fields[user.indexOfQuestion-1].answer > 5 )
 					user.form.push(forms[3]);
-				else if (user.indexOfForm == 1)
+				else if (user.indexOfForm == 1) {
 					console.log(forms[4]);
 					user.form.push(forms[4]);
+				}
 				else {
 					user.isFinished = true;
 				}
@@ -118,6 +121,24 @@ function sendQuestion(user) {
         		keyboard: choices, one_time_keyboard: true})}
 			console.log(opts);
 			bot.sendMessage(user.id, question.question, opts);
+			break;
+		case "picture_choice":
+			choices = [];
+			for (i=0; i<question.choices.length; i++) {
+				choices.push([question.choices[i].label]);
+			}
+			var opts = {reply_markup: JSON.stringify({
+        		keyboard: choices, one_time_keyboard: true})}
+			bot.sendMessage(user.id, question.question);
+			bot.sendPhoto(user.id, __dirname+'/images/image_1.jpg', {caption: choices[0]}).then(function() {
+				bot.sendPhoto(user.id, __dirname+'/images/image_2.jpg', {caption: choices[1]}).then(function() {
+					bot.sendPhoto(user.id, __dirname+'/images/image_3.jpg', {caption: choices[2]}).then(function() {
+						bot.sendPhoto(user.id, __dirname+'/images/image_4.jpg', opts);
+					});
+				});
+			});
+			
+
 			break;
 		case "dropdown":
 			choices = [];
@@ -203,6 +224,12 @@ function parsingAnswer(user, text) {
 	console.log(text);
 	switch(question.type){
 		case "multiple_choice":
+			for (i=0; i<question.choices.length; i++) {
+				if(question.choices[i].label == text)
+					correct = true;
+			}
+			break;
+		case "picture_choice":
 			for (i=0; i<question.choices.length; i++) {
 				if(question.choices[i].label == text)
 					correct = true;

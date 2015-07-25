@@ -3,12 +3,35 @@
   "design_id": 11,
   "fields": [
     {
-       "type": "stament",
-       "question": "We are sad our product didn't convince you...😞"
+       "type": "statement",
+       "question": "We are sad our product did not convince you...😞"
     },
     {
       "type": "long_text",
       "question": "What could we do better?"
+    },
+    {
+      "type": "picture_choice",
+      "question": "Who would you like to be attended by the next time?",
+      "labels": true,
+      "choices": [
+        {
+          "label": "Chewacca",
+          "image_id": 2675
+        },
+        {
+          "label": "Apple Genius",
+          "image_id": 2676
+        },
+        {
+          "label": "Lina",
+          "image_id": 2673
+        },
+        {
+          "label": "Freak",
+          "image_id": 2674
+        }
+      ]
     },
     {
       "type": "statement",
