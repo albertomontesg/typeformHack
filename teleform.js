@@ -3,8 +3,8 @@ var TelegramBot = require('node-telegram-bot-api');
 var request = require('request');
 var _ = require('underscore');
 
-var telegram_token = '120444592:AAG1AUlugiXOc3o0qGwV1eBCjlX3b2PonfM';
-var typeform_api_key = '0713948dae86d178178f7c495c96c2fe';
+var telegram_token = 'TELEGRAM_TOKEN';
+var typeform_api_key = 'TYPEFORM_KEY';
 
 var users = [];
 

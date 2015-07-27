@@ -10,7 +10,13 @@ To get ready to use it, it would be necessary to have a token key for the TypeFo
 
 Also it would be necessary to have a Telegram Bot created with its corresponding token key. To create a new Bot you can use the Telegram Bot: @BotFather. Once you have the key you should place it on the ```telegram_token``` variable.
 
+To start the bot you only need to be at the root directory of the repository and then call:
+```node teleform.js```
+
 ### Future Development
 This code was made for the Typeform I/O Summer Hackathon and also was design to adapt the form dinamically depending on previous answers. This dinamic forms are not supperted by Typeform API, so my idea should be to make this Telegram Bot able to ask for every form. So for start a form, with a command giving the form id it should be necessary to make the form on this bot. This have applications to whoever wants to ask its forms by Telegram, so give a deeplink to the user with the id of the form and the command to start it.
 
 Also it should be solved how the answers by the users are given back to the form creator.
+
+### License
+The license is a MIT license and available in the ```LICENSE``` file
